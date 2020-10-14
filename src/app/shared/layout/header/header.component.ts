@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+// MDB Angular Free
+import { BreadcrumbModule, IconsModule } from 'angular-bootstrap-md'
+
 
 @Component({
   selector: 'app-header',

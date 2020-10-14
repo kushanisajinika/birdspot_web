@@ -1,0 +1,12 @@
+.container-fluid{
+    background-image: url("../../../assets/images/01.jpg");
+}
+.signup-form{
+    border-radius: 10px;
+    background-color: white;
+    opacity: .9;
+}
+
+.signup-body{
+    padding: 20px;
+}

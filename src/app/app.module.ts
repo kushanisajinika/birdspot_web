@@ -8,6 +8,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { HeaderComponent } from './shared/layout/header/header.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 @NgModule({
   declarations: [
@@ -15,11 +17,15 @@ import { HeaderComponent } from './shared/layout/header/header.component';
     LoginComponent,
     SignupComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]

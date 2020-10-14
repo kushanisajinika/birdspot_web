@@ -1,88 +1,15 @@
-.p{
-    color: brown;
-    background-color: burlywood;
+.container-fluid{
+  background-image: url("../.././../assets/images/08.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
-.container{
-  background-image:url("/images/04.jpg");
-
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-   
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment:fixed;
-    margin:0;
-    background-color: springgreen;
-  }
-form {border: 3px solid #f1f1f1;
-        margin-top: 10%;
-        position: center;
-        margin-right: 10%;
-        background: rgba(0,0,0,0.1);
-        box-shadow:0,0, 10px rgba(0,0,0,0.1) ;
-        border-radius: 25px;
+.login-form{
+  border-radius: 10px;
+  background-color: white;
+  opacity: .8;
 
 }
 
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 25px;
+.form-body{
+  padding: 120px 50px 120px 50px;
 }
-
-button {
-  background-color: #8eeb91;
-  border-radius: 25px;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 40%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-  border-radius: 25px;
-  margin-bottom: 50px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-  }
