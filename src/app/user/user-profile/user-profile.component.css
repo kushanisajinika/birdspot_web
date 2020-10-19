@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #f1f1f1;
+}
+.card-container{
+   transform: absolute;
+}
+.upper-container{
+    height: 280px;
+    width:100%;
+    background-color: blueviolet;
+}
+.lower-container{
+    height:50%;
+    background-color: cornsilk;
+}
+.image-container{
+    background-color: turquoise;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    align-items: center;
+    padding:50px;
+    transform: translate(50%, 80%);
+
+}

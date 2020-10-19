@@ -9,6 +9,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { HeaderComponent } from './shared/layout/header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { UserProfileComponent } from './user/user-profile/user-profile.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     SignupComponent,
     FooterComponent,
     HeaderComponent,
+    UserProfileComponent,
 
 
   ],
