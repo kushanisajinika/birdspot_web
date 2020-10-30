@@ -9,19 +9,20 @@ body{
 .upper-container{
     height: 280px;
     width:100%;
-    background-color: blue ;
+    background-image:url("../.././../assets/images/08.jpg");
 }
 .lower-container{
     height:50%;
     background-color: cornsilk;
 }
 .image-container{
-    background-color: turquoise;
+    background-image: url("../.././../assets/images/08.jpg");
     height:200px;
     width:200px;
     border-radius: 50%;
     align-items: center;
     padding:50px;
     transform: translate(50%, 80%);
+    
 
 }
