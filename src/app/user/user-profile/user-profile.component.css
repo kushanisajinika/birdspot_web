@@ -7,9 +7,12 @@ body{
    transform: absolute;
 }
 .upper-container{
-    height: 280px;
-    width:100%;
+   min-height: 400px;;
+    width:80%;
+    margin:auto;
     background-image:url("../.././../assets/images/08.jpg");
+    text-align: center;
+    color: thistle;
 }
 .lower-container{
     height:50%;
