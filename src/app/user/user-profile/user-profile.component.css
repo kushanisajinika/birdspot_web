@@ -7,9 +7,18 @@ container-fluid{
    margin-top: 20px;
 }
 .jumbotron{
-    margin-top: 200px;
+    
     border-radius: 10px;
-    padding: none;
+    padding:none;
+}
+.menu{
+    background: #fff;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .upper-container{
    min-height: 400px;;
@@ -43,7 +52,7 @@ container-fluid{
     margin-top: -250px;
     border: solid 5px;
     border-color: white;
-
+    margin-bottom: 200px;
 }
 .body{
     width:80%;
