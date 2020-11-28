@@ -1,27 +1,66 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    background: #f1f1f1;
+
+container-fluid{
+    background: #e6e2e2;
 }
-.card-container{
+.card{
    transform: absolute;
+   margin-top: 20px;
+}
+.jumbotron{
+    
+    border-radius: 10px;
+    padding:none;
+}
+.menu{
+    background: #fff;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .upper-container{
-    height: 280px;
-    width:100%;
-    background-color: blue ;
+   min-height: 400px;;
+    width:80%;
+    margin:auto;
+    background-image:url("../.././../assets/images/08.jpg");
+    text-align: center;
+    color: thistle;
+    background-size:cover ;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size:cover ;
+    -o-background-size: cover;
 }
 .lower-container{
     height:50%;
     background-color: cornsilk;
 }
 .image-container{
-    background-color: turquoise;
+    background-image: url("../.././../assets/images/k.jpg");
     height:200px;
     width:200px;
     border-radius: 50%;
-    align-items: center;
+    background-size:cover ;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size:cover ;
+    -o-background-size: cover;
     padding:50px;
     transform: translate(50%, 80%);
-
+    margin-top: -250px;
+    border: solid 5px;
+    border-color: white;
+    margin-bottom: 200px;
+}
+.body{
+    width:80%;
+    margin:auto;
+    background-size:cover ;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size:cover ;
+    -o-background-size: cover;
+    font-family:arial ;
 }
