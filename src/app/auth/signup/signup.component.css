@@ -1,5 +1,9 @@
 .container-fluid{
     background-image: url("../../../assets/images/01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 .signup-form{
     border-radius: 10px;
@@ -10,3 +14,9 @@
 .signup-body{
     padding: 20px;
 }
+
+@media screen and (max-width: 2000px) and (min-width: 300px) {
+    .form-control{
+        margin-bottom: 20px;
+    }
+  }
