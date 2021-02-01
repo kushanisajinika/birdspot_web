@@ -1,40 +1,40 @@
 <div class="container-fluid">
     <div class="row">
         <div class=" col-lg-4 col-md-2 col-sm-2"></div>
-        <div class="col-lg-4 col-md-8 col-sm-8 signup-body">
+        <div class="col-lg-4 col-md-8 col-sm-8 signup-body" >
             <!-- Default form register -->
-            <form class="text-center border border-light p-5 signup-form">
+            <form [formGroup]="myForm" class="text-center border border-light p-5 signup-form">
 
                 <p class="h4 mb-4">Sign up</p>
 
                 <div class="form-row row mb-4">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <!-- First name -->
-                        <input type="text" id="defaultRegisterFormFirstName" class="form-control"
+                        <input type="text" id="defaultRegisterFormFirstName" formControlName="firstName" class="form-control"
                             placeholder="First name">
                     </div>
                     <br>
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <!-- Last name -->
-                        <input type="text" id="defaultRegisterFormLastName" class="form-control"
+                        <input type="text" id="defaultRegisterFormLastName" formControlName="LastName" class="form-control"
                             placeholder="Last name">
                     </div>
                 </div>
 
                 <!-- E-mail -->
-                <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                <input type="email" id="defaultRegisterFormEmail" formControlName="email" email="firstName" class="form-control mb-4" placeholder="E-mail">
 
                 <!-- Password -->
 
 
                 <!-- Phone number -->
-                <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number"
+                <input type="text" id="defaultRegisterPhonePassword" MobileNo="firstName" formControlName="MobileNo" class="form-control" placeholder="Phone number"
                     aria-describedby="defaultRegisterFormPhoneHelpBlock">
                 <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
                     Optional - for two-step authentication
                 </small>
 
-                <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
+                <input type="password" id="defaultRegisterFormPassword" formControlName="password" password="firstName" class="form-control" placeholder="Password"
                     aria-describedby="defaultRegisterFormPasswordHelpBlock">
                 <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
                     At least 8 characters and 1 digit
@@ -48,7 +48,11 @@
                 </div> -->
 
                 <!-- Sign up button -->
-                <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign Up</button>
+                <button mdbBtn color="info" block="true" class="my-4" (click)="register()"  type="submit">Sign Up</button>
+                <div class="" style="text-align:center;color: rgb(218, 24, 24);">
+                    <p>              </p>
+                    {{successMessage}}
+                  </div>
 
                 <!-- Social register -->
                 <!-- <p>or sign up with:</p> -->

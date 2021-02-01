@@ -8,15 +8,15 @@
     </div>
     <div class="col-lg-4 col-md-12 form-body">
       <!-- Default form login -->
-      <form class="text-center border border-light p-5 login-form">
+      <form class="text-center border border-light p-5 login-form" [formGroup]="loginForm">
 
         <p class="h4 mb-4">Sign in</p>
 
         <!-- Email -->
-        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+        <input type="email" id="defaultLoginFormEmail" formControlName="email" class="form-control mb-4" placeholder="E-mail">
 
         <!-- Password -->
-        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+        <input type="password" id="defaultLoginFormPassword" formControlName="password" class="form-control mb-4" placeholder="Password">
 
         <div class="d-flex justify-content-around">
           <div>
@@ -30,15 +30,19 @@
         </div>
 
         <!-- Sign in button -->
-        <button mdbBtn color="default" block="true" class="my-4" type="submit">Sign in</button>
+        <button mdbBtn color="default" block="true" class="my-4" type="submit" (click)="login()">Sign in</button>
+        <div class="" style="text-align:center;color: rgb(218, 24, 24);">
+          <p>              </p>
+          {{successMessage}}
+        </div>
 
         <!-- Register -->
         <p>Not a member?
-          <a href="">Register</a>
+          <a routerLink='/signup'> <a href="">Register</a></a>
         </p>
 
         <!-- Social login -->
-        <p>or sign in with:</p>
+        <!-- <p>or sign in with:</p> -->
 
         <a type="button" class="light-blue-text mx-2">
           <mdb-icon fab icon="facebook"></mdb-icon>
