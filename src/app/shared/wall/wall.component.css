@@ -2,7 +2,12 @@
     padding: 0px;
     /* text-align: center; */
     padding-top: 20px;
+  
     
+}
+
+.height{
+    height: 50px;
 }
 
 .container-fluid{

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// For MDB Angular Free
+import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
 // MDB Angular Free
 import { BreadcrumbModule, IconsModule } from 'angular-bootstrap-md'
 

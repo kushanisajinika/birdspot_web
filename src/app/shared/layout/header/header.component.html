@@ -1,15 +1,77 @@
-<div class="row">
-  <div class="col-lg-12 col-sm-12">
-    <div id="bar">
-      <div style="width: 800px; margin: auto; font-size: 30px;">
-          BirdSpot &nbsp; &nbsp; <input type="text" id="search_box" placeholder="Search for people">
-        <span class="image">
-        <img src="../.././../assets/images/k.jpg" class="rounded-circle z-depth-0" 
-                alt="avatar image" height="40" width="40"style="float:right;" >
-              </span>
-      </div>
-    </div>
-  </div>
-</div>
+<!--Navbar-->
+<mdb-navbar class="nav-bar" style="background-color: rgb(55, 235, 151) !important;"
+  SideClass="navbar navbar-expand-lg navbar-dark purple lighten-1" [containerInside]="false">
 
-    
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <form class="d-flex input-group w-auto">
+        <input type="search" class="form-control" placeholder="Type query" aria-label="Search" />
+        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+          Search
+        </button>
+      </form>
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link" href="#">
+          <span><i class="fas fa-home fa-lg"></i></span>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Home</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+      </li> -->
+
+      <!-- Dropdown -->
+      <!-- <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Basic dropdown<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+        </div>
+      </li> -->
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <!-- Notification dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+          data-mdb-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Some news</a></li>
+          <li><a class="dropdown-item" href="#">Another news</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item avatar dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          <img src="../../../../assets/images//pr-icon.jpg" alt="" class="img-fluid rounded-circle z-depth-0"></a>
+        <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+         <a  routerLink='/user' class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
+        </div>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->

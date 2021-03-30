@@ -1,17 +1,13 @@
-#bar{
-    height: 50px;
-    background-color: teal;
-    color: white;
+/* .navbar{
+    background-color: rgb(115, 238, 131);
+    width: 100%;
+} */
+
+.img-fluid{
+    width: 50px ;
 }
-#search_box{
-    width:400px;
-    height: 25px;
-    border-radius: 5px;
-    border: none;
-    padding: 4px;
-    font-size: 14px;
-    
-}
-.image{
-    position:relative;
+.nav-bar{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
 }
